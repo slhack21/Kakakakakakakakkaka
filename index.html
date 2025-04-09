@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>IHL Réparation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <button id="menu-toggle" class="burger">≡</button>
+    <div class="logo">IHL Réparation</div>
+  </header>
+
+  <nav id="side-menu" class="side-menu">
+    <button id="close-menu" class="close-btn">X</button>
+    <a id="login-link" href="login.html">Connexion</a>
+    <a href="signup.html">Inscription</a>
+    <a href="admin.html">Admin</a>
+    <button class="theme-toggle" onclick="toggleDarkMode()">
+      <img id="theme-icon" src="moon.png" alt="Mode sombre">
+    </button>
+  </nav>
+
+  <main>
+    <section class="services">
+      <h2>Nos Services</h2>
+      <div class="service-item">
+        <img src="service-screen.jpg" alt="Réparation écran">
+        <h3>Réparation d'écran</h3>
+        <p>Remplacement rapide d’écrans cassés ou endommagés.</p>
+      </div>
+      <div class="service-item">
+        <img src="service-battery.jpg" alt="Batterie">
+        <h3>Remplacement de batterie</h3>
+        <p>Nous remplaçons les batteries usées pour une meilleure autonomie.</p>
+      </div>
+    </section>
+
+    <section class="contactez-nous">
+      <h2>Contactez-nous</h2>
+      <a href="tel:0765758855" class="btn-contact call">Appelez-nous</a>
+      <a href="mailto:ilhanlyoussfi@icloud.com" class="btn-contact email">Envoyez un Email</a>
+    </section>
+  </main>
+
+  <script src="firebase.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
